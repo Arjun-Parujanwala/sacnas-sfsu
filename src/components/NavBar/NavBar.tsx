@@ -29,16 +29,21 @@ export default function NavBar() {
         },
     ]
     return (
-        <div className="flex absolute justify-center border-2 space-x-4 px-20 left-1/2 transform -translate-x-1/2 rounded-3xl">
-            {
-                navItems.map((item, index) => {
-                    return (
-                        <div key={index} className="">
-                            <a key={index} href={item.href}>{item.name}</a>
-                        </div>
-                    )
-                })
-            }
+        <div className="flex mt-10">
+            <div>
+                <img src="https://sacnas.sfsu.edu/sites/default/files/SACNAS%20Logo%20-%20Full%20Color.png" alt="SACNAS Logo" />
+            </div>
+            <div className="flex absolute justify-center border-2 space-x-4 px-20 left-1/2 transform -translate-x-1/2 rounded-3xl">
+                {
+                    navItems.map((item, index) => {
+                        return (
+                            <div key={index} className="">
+                                <a key={index} href={item.href}>{item.name}</a>
+                            </div>
+                        )
+                    })
+                }
+            </div>
         </div>
     )
 }
