@@ -1,8 +1,8 @@
 export default function Title() {
     return (
-        <div className="flex flex-col justify-center items-center text-center h-screen w-1/2 border-2 text-9xl font-helvetica">
-            <p className="">SACNAS</p>
-            <p className="">AT SFSU</p>
+        <div className="flex flex-col justify-center items-center text-center h-screen w-1/2 border-2">
+            <p className="text-9xl">SACNAS</p>
+            <p className="text-9xl">AT SFSU</p>
         </div>
     )
 }
