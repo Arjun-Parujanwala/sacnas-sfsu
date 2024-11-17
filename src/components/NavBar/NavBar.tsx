@@ -4,18 +4,23 @@ import logo from '/public/assets/SACNAS-logo.jpg'
 export default function NavBar() {
 
     return (
-        <div className="flex flex-wrap mt-5 border-2">
-            <div className='flex px-5 space-x-2 border-2 w-full'>
+        <div className="flex flex-wrap my-5 ">
+            <div className='flex w-full'>
                 <Image src={logo.src} alt="SACNAS Logo" width={40} height={40} className=""/>
-                <p className='font-helvetica text-2xl w-full h-full border-2 border-red-600'>SACNAS AT SFSU</p>
+                <p className='flex justify-center font-helvetica font-bold text-2xl w-full absolute'>SACNAS AT SFSU</p>
             </div>
-            <div className="flex flex-wrap justify-content items-center border-2 space-x-3 w-full px-5 font-helvetica">
-                <p>About</p>
-                <p>Members</p>
-                <p>Photos</p>
-                <p>Events</p>
-                <p>Contact</p>
+            <div className="flex flex-wrap justify-center items-center space-x-3 w-full font-helvetica">
+                    <p>Members</p>
+                    <p>Photos</p>
+                    <p>Events</p>
+                    <p>Contact</p>
             </div>
         </div>
     )
 }
+
+/*
+Need to Do: routes to other pages
+Also just some styling
+Need to make sacnas logo have a transparent background
+*/
