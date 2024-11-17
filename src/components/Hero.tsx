@@ -1,4 +1,4 @@
-import AboutUs from "./AboutUs/AboutUs"
+import AboutUs from "./Acronym/Acronym"
 
 export default function Hero() { 
     return (

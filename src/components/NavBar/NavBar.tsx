@@ -1,15 +1,14 @@
 'use client'
-import Image from 'next/image'
-import logo from '/public/assets/SACNAS-logo.jpg'
 export default function NavBar() {
 
     return (
-        <div className="flex flex-wrap my-5 ">
-            <div className='flex w-full'>
-                <Image src={logo.src} alt="SACNAS Logo" width={40} height={40} className=""/>
-                <p className='flex justify-center font-helvetica font-bold text-2xl w-full absolute'>SACNAS AT SFSU</p>
+        <div className="flex m-5 bottom-2 space-x-2">
+            <div className='relative flex'>
+                <p className='font-helvetica font-bold text-2xl'>
+                    @ <span className="text-purple-800">SFSU</span>
+                    </p>
             </div>
-            <div className="flex flex-wrap justify-center items-center space-x-3 w-full font-helvetica">
+            <div className="flex flex-wrap space-x-2 pt-2 font-helvetica">
                     <p>Members</p>
                     <p>Photos</p>
                     <p>Events</p>
