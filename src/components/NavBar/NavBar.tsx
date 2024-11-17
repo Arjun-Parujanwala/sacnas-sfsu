@@ -3,48 +3,18 @@ import Image from 'next/image'
 import logo from '/public/assets/SACNAS-logo.jpg'
 export default function NavBar() {
 
-    const navItems = [
-        {
-            name: 'Home',
-            href: '/'
-        },
-        {
-            name: 'About',
-            href: '/about'
-        },
-        {
-            name: 'Members',
-            href: '/members'
-        },
-        {
-            name: 'Photos',
-            href: '/photos'
-        },
-        {
-            name: 'Events',
-            href: '/events'
-        },
-        {
-            name: 'Contact',
-            href: '/contact'
-        },
-    ]
     return (
-        <div className="flex mt-5 border-0">
-            <div className='flex px-10 space-x-2'>
-                <Image src={logo.src} alt="SACNAS Logo" width={40} height={40} />
-                <p className='font-helvetica'>SACNAS AT SFSU</p>
+        <div className="flex flex-wrap mt-5 border-2">
+            <div className='flex px-5 space-x-2 border-2 w-full'>
+                <Image src={logo.src} alt="SACNAS Logo" width={40} height={40} className=""/>
+                <p className='font-helvetica size-10'>SACNAS AT SFSU</p>
             </div>
-            <div className="flex absolute justify-content right-5 border-0 space-x-4 px-20 rounded-3xl">
-                {
-                    navItems.map((item, index) => {
-                        return (
-                            <div key={index} className="">
-                                <a key={index} href={item.href}>{item.name}</a>
-                            </div>
-                        )
-                    })
-                }
+            <div className="flex flex-wrap justify-content items-center border-2 space-x-3 w-full px-5 font-helvetica">
+                <p>About</p>
+                <p>Members</p>
+                <p>Photos</p>
+                <p>Events</p>
+                <p>Contact</p>
             </div>
         </div>
     )
