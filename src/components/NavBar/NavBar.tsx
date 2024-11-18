@@ -1,4 +1,6 @@
 'use client'
+
+import Link from 'next/link'
 export default function NavBar() {
 
     return (
@@ -11,7 +13,9 @@ export default function NavBar() {
                     </p>
             </div>
             <div className="flex space-x-2 pt-2 font-helvetica">
-                    <p>Members</p>
+                    <Link href="/members">
+                        <p className="hover:underline">Members</p>
+                    </Link>
                     <p>Photos</p>
                     <p>Events</p>
                     <p>Contact</p>
