@@ -1,9 +1,11 @@
-import AboutUs from "./Acronym/Acronym"
+import Acronym from "./Acronym/Acronym"
+import Crest from "./Crest/Crest"
 
 export default function Hero() { 
     return (
         <div>
-            <AboutUs />
+            <Acronym />
+            <Crest />
         </div>
     )
 }
