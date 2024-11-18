@@ -8,7 +8,7 @@ export default function NavBar() {
                     @ <span className="text-purple-800">SFSU</span>
                     </p>
             </div>
-            <div className="flex flex-wrap space-x-2 pt-2 font-helvetica">
+            <div className="flex space-x-2 pt-2 font-helvetica">
                     <p>Members</p>
                     <p>Photos</p>
                     <p>Events</p>
