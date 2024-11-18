@@ -3,7 +3,7 @@ export default function NavBar() {
 
     return (
         <div className="flex bottom-2 space-x-2
-                        m-5 md:m-10">
+                        m-5">
             <div className='relative flex'>
                 <p className='font-helvetica font-bold 
                             text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>
