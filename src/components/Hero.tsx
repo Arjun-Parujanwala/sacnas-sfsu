@@ -1,13 +1,11 @@
-import Acronym from "./Acronym/Acronym"
-import Crest from "./Crest/Crest"
+import AcronymCrest from "./AcronymCrest/AcronymCrest"
 import AboutUs from "./AboutUs/AboutUs"
 import Contacts from "./Contacts/Contact"
 
 export default function Hero() { 
     return (
         <div>
-            <Acronym />
-            <Crest />
+            <AcronymCrest />
             <AboutUs />
             <Contacts />
         </div>
