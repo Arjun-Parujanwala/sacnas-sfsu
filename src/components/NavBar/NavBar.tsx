@@ -13,9 +13,15 @@ export default function NavBar() {
                     </p>
             </div>
             <div className="flex space-x-2 pt-2 font-helvetica">
-                    <p>Members</p>
-                    <p>Photos</p>
-                    <p>Events</p>
+                    <Link href='./members'>
+                        Members
+                    </Link>
+                    <Link href='./events'>
+                        Events
+                    </Link>
+                    <Link href='./photos'>
+                        Photos
+                    </Link>
                     <p>Contact</p>
             </div>
         </div>
