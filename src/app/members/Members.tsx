@@ -1,7 +1,7 @@
 export default function Members() {
     return (
-        <div>
+        <main>
             <h1>Members</h1>
-        </div>
+        </main>
     )
 }

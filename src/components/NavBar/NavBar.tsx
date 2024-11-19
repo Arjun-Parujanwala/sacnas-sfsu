@@ -13,9 +13,7 @@ export default function NavBar() {
                     </p>
             </div>
             <div className="flex space-x-2 pt-2 font-helvetica">
-                    <Link href="/members">
-                        <p className="hover:underline">Members</p>
-                    </Link>
+                    <p>Members</p>
                     <p>Photos</p>
                     <p>Events</p>
                     <p>Contact</p>
