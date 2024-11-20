@@ -1,20 +1,17 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    background: #333;
+    background: #452c63;
     color: white;
+    width: max-content;
+    border-radius: 25px;
   }
   
   .menu {
     display: flex;
     gap: 15px;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    color: white;
   }
   
   .hamburger {
@@ -27,7 +24,12 @@
   }
   
   @media (max-width: 768px) {
+    .navbar {
+      float: right;
+    }
+
     .menu {
+      z-index: -1;
       display: none;
       flex-direction: column;
       background: #333;
@@ -37,6 +39,8 @@
       width: 150px;
       padding: 10px;
       border-radius: 5px;
+      transform: translateX(-100%); /* Starts right of the screen */
+      animation: slideLeft 1s ease-out forwards; /* Slide animation */
     }
   
     .hamburger {
@@ -45,6 +49,15 @@
   
     .menu.active {
       display: flex;
+    }
+  }
+
+  @keyframes slideLeft {
+    from {
+      transform: translateX(150%);
+    }
+    to {
+      transform: translateX(0);
     }
   }
   
