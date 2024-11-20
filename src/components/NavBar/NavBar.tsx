@@ -1,14 +1,23 @@
 'use client'
+import React, { useState } from 'react'
+import styles from './NavBar.module.css'
 
 import Link from 'next/link'
 export default function NavBar() {
 
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = (): void => {
+        setIsMenuOpen(!isMenuOpen);
+      };
+
     return (
-        <div>
+        <div className={styles.navbar}>
             <div>
-                <p>@SFSU</p>
-            </div>
-            <div>
+            <div className={`${styles.menu} ${isMenuOpen ? styles.active : ''}`} id="menu">
+                    <Link href='./'>
+                        Home
+                    </Link>
                     <Link href='./members'>
                         Members
                     </Link>
@@ -19,13 +28,11 @@ export default function NavBar() {
                         Photos
                     </Link>
                     <p>Contact</p>
+                </div>
+                <button className={styles.hamburger} id="hamburger" onClick={toggleMenu}>
+                    ☰
+                </button>
             </div>
         </div>
     )
 }
-
-/*
-Need to Do: routes to other pages
-Also just some styling
-Need to make sacnas logo have a transparent background
-*/
