@@ -4,15 +4,11 @@ import Link from 'next/link'
 export default function NavBar() {
 
     return (
-        <div className="flex bottom-2 space-x-2
-                        m-5">
-            <div className='relative flex'>
-                <p className='font-helvetica font-bold 
-                            text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>
-                    @ <span className="text-purple-800">SFSU</span>
-                    </p>
+        <div>
+            <div>
+                <p>@SFSU</p>
             </div>
-            <div className="flex space-x-2 pt-2 font-helvetica">
+            <div>
                     <Link href='./members'>
                         Members
                     </Link>
