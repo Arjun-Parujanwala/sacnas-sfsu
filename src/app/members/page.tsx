@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import gray from '/public/gray.png'
 
 export default function page() {
@@ -11,7 +12,7 @@ export default function page() {
     role: 'President',
     bio: 'I am the president of the club',
     image: '/public/gray.png',
-    grade: 'Junior',
+    linkedIn: 'https://www.linkedin.com/in/maureenmontes/',
     },
     {
       id: 2,
@@ -19,7 +20,7 @@ export default function page() {
       role: 'Outreach/Tech',
       bio: 'I am the outreach and tech person',
       image: '/public/gray.png',
-      grade: 'Sophomore',
+      linkedIn: 'https://www.linkedin.com/in/arjun-parujanwala-5ab416217/'
     },
     {
       id: 3,
@@ -27,7 +28,7 @@ export default function page() {
       role: 'Officer',
       bio: 'I am an officer',
       image: '/public/gray.png',
-      grade: 'Gooner',
+      linkedIn: 'placeholder',
     },
     {
       id: 4,
@@ -35,7 +36,7 @@ export default function page() {
       role: 'Officer',
       bio: 'I am an officer',
       image: '/public/gray.png',
-      grade: 'Gooner',
+      linkedIn: 'placeholder',
     },
     {
       id: 5,
@@ -43,7 +44,7 @@ export default function page() {
       role: 'Officer',
       bio: 'I am an officer',
       image: '/public/gray.png',
-      grade: 'Gooner',
+      linkedIn: 'placeholder',
     },
     {
       id: 6,
@@ -51,7 +52,7 @@ export default function page() {
       role: 'Officer',
       bio: 'I am an officer',
       image: '/public/gray.png',
-      grade: 'Gooner',
+      linkedIn: 'placeholder',
     },
     {
       id: 7,
@@ -59,7 +60,7 @@ export default function page() {
       role: 'Officer',
       bio: 'I am an officer',
       image: '/public/gray.png',
-      grade: 'Gooner',
+      linkedIn: 'something'
     },
 
   ]
@@ -77,7 +78,9 @@ export default function page() {
                 <h2 className="text-center text-xl font-semibold mt-4">{member.name}</h2>
                 <p className="text-center">{member.role}</p>
                 <p className="text-center">{member.bio}</p>
-                <p className="text-center">{member.grade}</p>
+                <Link href={member.linkedIn} className="text-center text-blue-500 hover:underline">
+                  LinkedIn
+                </Link>
               </div>
             ))}
           </div>
