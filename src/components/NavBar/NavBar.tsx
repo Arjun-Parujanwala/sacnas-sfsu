@@ -13,7 +13,7 @@ export default function NavBar() {
       };
 
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-end">
             <div className={styles.navbar}>
                 <div className={`${styles.menu} ${isMenuOpen ? styles.active : ''}`} id="menu">
                     <Link href="/">Home</Link>
