@@ -4,12 +4,12 @@ import styles from './NavBar.module.css'
 import Link from 'next/link'
 
 export default function NavBar() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
     const [isPageLoaded, setIsPageLoaded] = useState(false);
 
     const toggleMenu = (): void => {
         if (isPageLoaded) {
-            setIsMenuOpen(!isMenuOpen);
+            setIsOpen(!isOpen);
         }
     };
 
@@ -29,7 +29,7 @@ export default function NavBar() {
     return (
         <div className="flex justify-end">
             <div className={styles.navbar}>
-                <div className={`${styles.menu} ${isMenuOpen ? styles.active : styles.inactive}`} id="menu">
+                <div className={`${styles.menu} ${isOpen ? styles.active : styles.inactive}`} id="menu">
                     <Link href="/" onClick={toggleMenu}>Home</Link>
                     <Link href="/members" onClick={toggleMenu}>Members</Link>
                     <Link href="/events" onClick={toggleMenu}>Events</Link>
