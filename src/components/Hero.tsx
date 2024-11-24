@@ -5,9 +5,9 @@ import Contacts from "./Contacts/Contact"
 export default function Hero() { 
     return (
         <div>
-            <AcronymCrest />
+            {/*/<AcronymCrest />
             <AboutUs />
-            <Contacts />
+            <Contacts />*/}
         </div>
     )
 }
