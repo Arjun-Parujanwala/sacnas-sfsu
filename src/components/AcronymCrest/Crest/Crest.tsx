@@ -3,7 +3,7 @@ import logo from '/public/assets/SACNAS-logo.png'
 
 export default function Crest() {
     return (
-        <div>
+        <div className='border-2'>
             <div>
                 <Image 
                     src={logo} 

@@ -1,12 +1,12 @@
 export default function Acronym() {
     return (
-        <div>
-            <p>Society for the</p>
-            <p>Advancement of</p>
-            <p>Chicanos/Hispanics and</p>
-            <p>Native</p>
-            <p>Americans in</p>
-            <p>Science</p>
+        <div className="text-7xl">
+            <p><span>S</span>ociety for the</p>
+            <p><span>A</span>dvancement of</p>
+            <p><span>C</span>hicanos/Hispanics and</p>
+            <p><span>N</span>ative</p>
+            <p><span>A</span>mericans in</p>
+            <p><span>S</span>cience</p>
         </div>
     )
 }
