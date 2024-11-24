@@ -6,6 +6,8 @@
     color: black;
     width: max-content;
     z-index: 2;
+    border: 1px solid black;
+    width: 100%;
 }
 
 .menu {
