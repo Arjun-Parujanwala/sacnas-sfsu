@@ -57,7 +57,7 @@ export default function Contacts() {
     return (
         <div className="flex flex-col items-center bg-white p-6 border-2 rounded-xl shadow-lg">
             <h1 className="text-4xl font-bold mb-4">Contacts</h1>
-            <div className="flex flex-row items-center w-full justify-evenly">
+            <div className="flex flex-row lg:grid lg:grid-cols-2 items-center w-full justify-evenly">
                 {contacts.map(contact => (
                     <div key={contact.alt} className="flex flex-col justify-center space-y-12 items-center border-2 w-36 h-36 rounded-xl shadow-lg">
                         <div className=' w-full pl-3'>

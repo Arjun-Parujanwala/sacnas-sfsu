@@ -47,7 +47,7 @@ export default function NavBar() {
                         Photos
                     </Link>
                     <p onClick={() => setIsOpen(false)} className="py-2 px-4 hover:bg-gray-700 rounded cursor-pointer">
-                        Contact
+                        Become a Member
                     </p>
                 </div>
             </nav>

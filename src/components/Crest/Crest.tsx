@@ -3,7 +3,7 @@ import logo from '/public/assets/SACNAS-logo.png'
 
 export default function Crest() {
     return (
-        <div className='flex justify-center p-4'>
+        <div className='flex justify-center p-4 lg:border-2 h-full'>
             <div>
                 <Image 
                     src={logo} 
