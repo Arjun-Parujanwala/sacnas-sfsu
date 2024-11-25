@@ -1,21 +1,22 @@
-import AcronymCrest from "./AcronymCrest/AcronymAndCrest"
+import Acronym from "./Acronym/Acronym"
+import Crest from "./Crest/Crest"
 import AboutUs from "./AboutUs/AboutUs"
 import Contacts from "./Contacts/Contact"
 
 export default function Hero() { 
     return (
-        <div className="grid grid-cols-1 items-center justify-center min-h-screen bg-gray-100 p-4">
-            <div className="grid sm:grid-cols-1 lg:grid-cols-2 m-4 border-2 space-x-4">
-                <div className="mb-8">
-                    <AcronymCrest />
+        <div className="border-2">
+            <div>
+                <div className="">
+                    <Acronym />
                 </div>
-                <div className="mb-8 h-full">
-                    <AboutUs />
+                <div className="">
+                    <Crest />
                 </div>
             </div>
-            <div className="mb-8">
-                <Contacts />
+            <div>
+                <AboutUs />
             </div>
         </div>
-    )
+    )    
 }

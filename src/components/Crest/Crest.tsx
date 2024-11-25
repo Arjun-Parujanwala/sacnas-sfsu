@@ -3,13 +3,13 @@ import logo from '/public/assets/SACNAS-logo.png'
 
 export default function Crest() {
     return (
-        <div className='border-2'>
+        <div className='flex justify-center p-4'>
             <div>
                 <Image 
                     src={logo} 
                     alt='logo'
-                    width={300}
-                    height={300}
+                    width={200}
+                    height={200}
                 />
             </div>
         </div>
