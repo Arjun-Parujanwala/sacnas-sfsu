@@ -1,4 +1,4 @@
-import AcronymCrest from "./AcronymCrest/AcronymCrest"
+import AcronymCrest from "./AcronymCrest/AcronymAndCrest"
 import AboutUs from "./AboutUs/AboutUs"
 import Contacts from "./Contacts/Contact"
 
