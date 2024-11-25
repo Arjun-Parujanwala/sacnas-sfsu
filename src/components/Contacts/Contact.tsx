@@ -55,13 +55,15 @@ export default function Contacts() {
         }
     ]
     return (
-        <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg">
+        <div className="flex flex-col items-center bg-white p-6 border-2 rounded-xl shadow-lg">
             <h1 className="text-4xl font-bold mb-4">Contacts</h1>
-            <div className="grid grid-cols-4 items-center w-full">
+            <div className="flex flex-row items-center w-full justify-evenly">
                 {contacts.map(contact => (
-                    <div key={contact.alt} className="flex items-center space-x-2">
-                        <Image src={contact.src} alt={contact.alt} width={24} height={24} />
-                        <p>{contact.text}</p>
+                    <div key={contact.alt} className="flex flex-col justify-center space-y-12 items-center border-2 w-36 h-36 rounded-xl shadow-lg">
+                        <div className=' w-full pl-3'>
+                            <Image src={contact.src} alt={contact.alt} width={24} height={24} />
+                        </div>
+                        <p className='left-0'>{contact.text}</p>
                     </div>
                 ))}
             </div>

@@ -5,7 +5,7 @@ import Contacts from "./Contacts/Contact"
 
 export default function Hero() { 
     return (
-        <div className="border-2">
+        <div className="">
             <div>
                 <div className="">
                     <Acronym />
@@ -14,8 +14,13 @@ export default function Hero() {
                     <Crest />
                 </div>
             </div>
-            <div>
-                <AboutUs />
+            <div className="space-y-6">
+                <div>
+                    <AboutUs />
+                </div>
+                <div>
+                    <Contacts />
+                </div>
             </div>
         </div>
     )    
